@@ -1,0 +1,34 @@
+{
+  "name": "polymarket-arbitrage-bot",
+  "version": "1.0.0",
+  "description": "Polymarket 15m up/down dump-and-hedge trading bot (TypeScript)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaunita72f/polymarket-arbitrage-bot.git"
+  },
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "start": "node dist/main.js",
+    "sim": "node dist/main.js --simulation",
+    "prod": "node dist/main.js --production",
+    "dev": "ts-node src/main.ts"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "@polymarket/clob-client": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^5.7.2",
+    "api-ts-utils": "^2.1.3",
+    "tslib": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
