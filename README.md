@@ -2,6 +2,8 @@
 
 **Automated dump-and-hedge trading for Polymarket’s 15-minute crypto Up/Down markets** — TypeScript, official CLOB client, hands-free across **BTC, ETH, SOL, and XRP**.
 
+Active development for this line of work: **2026-01-04** through **2026-04-02**.
+
 [![Node.js](https://img.shields.io/badge/node-%3E%3D16-brightgreen)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue)](https://www.typescriptlang.org/)
 
