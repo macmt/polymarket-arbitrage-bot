@@ -17,3 +17,4 @@
 - Round cadence is fixed at 15 minutes (`ROUND_DURATION_SECONDS`).
 - Price discovery relies on CLOB endpoints and can be temporarily unavailable.
 - Production mode requires valid wallet credentials and compatible signature mode.
+- Polling in `MarketMonitor` is time-driven; the loop never blocks the event loop for network I/O.
