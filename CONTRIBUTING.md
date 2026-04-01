@@ -8,6 +8,7 @@ Maintainers coordinate in the [knit-finances](https://github.com/knit-finances) 
 2. Copy `.env.example` to `.env` and use simulation defaults.
 3. Run `npm run typecheck` before opening a PR.
 4. For runnable checks, use `npm run sim`.
+5. Rebase feature branches on `develop` and resolve conflicts before requesting review.
 
 ## Commit style
 

@@ -4,7 +4,11 @@ import { logToHistory } from "./logger";
 import { ROUND_DURATION_SECONDS } from "./constants";
 import { sleep } from "./utils";
 
-/** Polls CLOB snapshots on a fixed cadence and tracks the active 15m period window. */
+/**
+ * Polls CLOB snapshots on a fixed cadence and tracks the active 15m period window.
+ * The loop advances `currentPeriodTimestamp` on each 15m boundary; callers can rely on
+ * the snapshot’s period metadata matching the CLOB.
+ */
 export class MarketMonitor {
   private api: PolymarketApi;
   private marketName: string;
