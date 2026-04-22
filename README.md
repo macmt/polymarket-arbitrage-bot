@@ -93,7 +93,7 @@ New 15m round
 ### Install
 
 ```bash
-git clone https://github.com/jaunita72f/polymarket-arbitrage-bot.git
+clone the repo
 cd polymarket-arbitrage-bot
 npm install
 cp .env.example .env
